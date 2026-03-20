@@ -2,10 +2,120 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ホーム</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #94a3b8;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #22c55e;
+      color: black;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #16a34a;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+    }
+  </style>
 </head>
 <body>
-  <h1>俺のサイトへようこそ</h1>
-  <p>ここがトップページ</p>
+
+<header>
+  <h1>My Site</h1>
+  <nav>
+    <a href="#">ホーム</a>
+    <a href="/tetris/">テトリス</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>ようこそ</h2>
+  <p>ここからいろんなゲームや作品にアクセスできる</p>
+  <a class="button" href="/tetris/">テトリスを遊ぶ</a>
+</section>
+
+<section class="section">
+  <div class="card">
+    <h3>テトリス</h3>
+    <p>ブラウザでそのまま遊べるテトリス</p>
+    <a class="button" href="/tetris/">プレイ</a>
+  </div>
+
+  <div class="card">
+    <h3>今後追加予定</h3>
+    <p>ここにゲームやツールを増やしていく</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 My Site
+</footer>
+
 </body>
 </html>
